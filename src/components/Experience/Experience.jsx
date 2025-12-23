@@ -10,19 +10,19 @@ import {
 
 const Experience = () => {
   return (
-    <div
+    <section
       id="Experience"
       className="px-6 py-16 md:px-24 md:py-28"
     >
-      <h1 className="text-3xl md:text-4xl text-white font-bold mb-14">
+      {/* CENTER HEADING */}
+      <h1 className="text-3xl md:text-4xl text-white font-bold mb-14 text-center">
         Experience & Skills
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-16 items-start justify-between">
 
-        {/* 🔥 SKILLS SECTION (ZOOMED) */}
+        {/* SKILLS */}
         <div className="grid grid-cols-3 gap-10 md:w-1/2">
-          
           {[
             { icon: <FaJs color="#F7DF1E" size={56} />, name: "JavaScript" },
             { icon: <FaReact color="#61DAFB" size={56} />, name: "React" },
@@ -46,9 +46,8 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* 🔥 EXPERIENCE CARDS (ZOOMED) */}
+        {/* EXPERIENCE */}
         <div className="flex flex-col gap-8 md:w-1/2">
-
           <div className="bg-slate-950/60 rounded-2xl p-8 shadow-xl">
             <h2 className="text-xl md:text-2xl font-semibold text-white">
               MERN Stack Trainee – QSpiders
@@ -80,10 +79,10 @@ const Experience = () => {
               <li>Used MongoDB for efficient data management</li>
             </ul>
           </div>
-
         </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,17 +6,17 @@ import Bookimage from "../../../public/abundant-collection-antique-books-wooden-
 
 const Projects = () => {
   return (
-    <div
+    <section
       id="Projects"
-      className="px-6 md:px-24 py-20 text-white"
+      className="px-6 md:px-24 py-16 flex flex-col items-center"
     >
-      <h1 className="text-2xl md:text-4xl font-bold mb-12">
+      {/* CENTER HEADING */}
+      <h1 className="text-2xl md:text-4xl font-bold mb-12 text-white text-center">
         Projects
       </h1>
 
-      {/* 🔥 ONE ROW – TWO PROJECTS */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        
+      {/* CENTER GRID */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-6xl">
         <ProjectCard
           title="Learning Management System (LMS)"
           main="A full-stack LMS with admin panel, authentication using Clerk, and Stripe payment integration."
@@ -32,9 +32,8 @@ const Projects = () => {
           sourceLink="https://github.com/singh74423/BookStoreAp"
           image={Bookimage}
         />
-
       </div>
-    </div>
+    </section>
   );
 };
 
