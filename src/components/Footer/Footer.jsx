@@ -19,13 +19,14 @@ const Footer = () => {
           </p>
 
           {/* Resume Button */}
-          <a
-            href="/resume.pdf"
-            download
-            className="inline-block mt-6 bg-black/30 px-6 py-2 rounded-3xl text-sm md:text-lg hover:bg-black/50 transition"
-          >
-            Download Resume
-          </a>
+      <a
+  href="https://drive.google.com/uc?export=download&id=16chdwz5W5Fy_RN2u2IYFrMDZfnGIz4SE"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-block mt-6 bg-black/30 px-6 py-2 rounded-3xl text-sm md:text-lg hover:bg-black/50 transition"
+>
+  Download Resume
+</a>
         </div>
 
         {/* Contact Links */}
