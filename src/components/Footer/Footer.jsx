@@ -7,68 +7,124 @@ const Footer = () => {
   return (
     <footer
       id="Footer"
-      className="bg-[#465697] text-white px-10 md:px-24 py-14"
+      className="
+        bg-gradient-to-b from-[#020617] via-[#020617] to-[#020617]
+        text-white
+        px-6 md:px-24 py-24
+      "
     >
-      <div className="flex flex-col md:flex-row justify-between items-center gap-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-        {/* Left Content */}
-        <div className="text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold">Contact</h1>
-          <p className="text-sm md:text-xl mt-2 opacity-90">
-            Feel free to reach out for opportunities or collaboration.
+        {/* LEFT */}
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Let’s{" "}
+            <span className="text-[#7c83ff]">
+              Connect
+            </span>
+          </h2>
+
+          <p className="text-gray-400 mt-4 max-w-md text-base md:text-lg leading-relaxed">
+            Open to job opportunities, collaborations, and meaningful
+            conversations. Let’s build something great together.
           </p>
 
           {/* Resume Button */}
-      <a
-  href="https://drive.google.com/uc?export=download&id=16chdwz5W5Fy_RN2u2IYFrMDZfnGIz4SE"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-block mt-6 bg-black/30 px-6 py-2 rounded-3xl text-sm md:text-lg hover:bg-black/50 transition"
->
-  Download Resume
-</a>
+          <a
+            href="https://drive.google.com/uc?export=download&id=16chdwz5W5Fy_RN2u2IYFrMDZfnGIz4SE"
+            target="_blank"
+            rel="noreferrer"
+            className="
+              inline-block mt-8
+              px-8 py-3
+              rounded-full
+              bg-[#7c83ff]
+              text-[#020617]
+              font-semibold
+              hover:bg-[#9aa0ff]
+              transition-all duration-300
+              shadow-lg
+            "
+          >
+            Download Resume
+          </a>
         </div>
 
-        {/* Contact Links */}
-        <ul className="space-y-4 text-sm md:text-lg">
-          <li className="flex items-center gap-3 hover:opacity-80 transition">
+        {/* RIGHT */}
+        <div className="space-y-5">
+
+          <a
+            href="mailto:singhujjwal744@gmail.com"
+            className="
+              flex items-center gap-4
+              bg-white/5
+              border border-white/10
+              px-6 py-4
+              rounded-xl
+              text-gray-300
+              hover:text-white
+              hover:border-[#7c83ff]
+              transition
+            "
+          >
             <MdOutlineEmail size={22} />
-            <a
-              href="mailto:singhujjwal744@gmail.com"
-              className="hover:underline"
-            >
+            <span className="text-base md:text-lg">
               singhujjwal744@gmail.com
-            </a>
-          </li>
+            </span>
+          </a>
 
-          <li className="flex items-center gap-3 hover:opacity-80 transition">
+          <a
+            href="https://www.linkedin.com/in/ujjwal-singh-077bb1196/"
+            target="_blank"
+            rel="noreferrer"
+            className="
+              flex items-center gap-4
+              bg-white/5
+              border border-white/10
+              px-6 py-4
+              rounded-xl
+              text-gray-300
+              hover:text-white
+              hover:border-[#7c83ff]
+              transition
+            "
+          >
             <CiLinkedin size={22} />
-            <a
-              href="https://www.linkedin.com/in/ujjwal-singh-077bb1196/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline"
-            >
+            <span className="text-base md:text-lg">
               LinkedIn Profile
-            </a>
-          </li>
+            </span>
+          </a>
 
-          <li className="flex items-center gap-3 hover:opacity-80 transition">
+          <a
+            href="https://github.com/singh74423"
+            target="_blank"
+            rel="noreferrer"
+            className="
+              flex items-center gap-4
+              bg-white/5
+              border border-white/10
+              px-6 py-4
+              rounded-xl
+              text-gray-300
+              hover:text-white
+              hover:border-[#7c83ff]
+              transition
+            "
+          >
             <FaGithub size={22} />
-            <a
-              href="https://github.com/singh74423"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline"
-            >
+            <span className="text-base md:text-lg">
               GitHub Profile
-            </a>
-          </li>
-        </ul>
+            </span>
+          </a>
+
+        </div>
       </div>
 
-      {/* Bottom Line */}
-      <div className="text-center text-xs md:text-sm opacity-80 mt-10">
+      {/* Divider */}
+      <div className="max-w-6xl mx-auto my-14 h-px bg-white/10" />
+
+      {/* Bottom */}
+      <div className="text-center text-xs md:text-sm text-gray-400">
         © {new Date().getFullYear()} Ujjwal Singh. All rights reserved.
       </div>
     </footer>

@@ -12,6 +12,7 @@ const ProjectCard = ({
   return (
     <div
       className="
+        group
         w-full max-w-[780px] mx-auto
         min-h-[320px] md:min-h-[300px]
         bg-[#0c0e19]
@@ -19,16 +20,22 @@ const ProjectCard = ({
         shadow-xl shadow-black/40
         grid grid-cols-1 md:grid-cols-2
         overflow-hidden
+        transition-all duration-300 ease-out
+        hover:-translate-y-2
+        hover:shadow-2xl
       "
     >
       {/* IMAGE SECTION */}
-      <div className="w-full h-full bg-black flex items-center justify-center p-4">
+      <div className="w-full h-full bg-black flex items-center justify-center p-4 overflow-hidden">
         <img
           src={image}
           alt={title}
-          className={`w-full h-full rounded-lg ${
-            isLMS ? "object-contain" : "object-cover"
-          }`}
+          className={`
+            w-full h-full rounded-lg
+            transition-transform duration-500 ease-out
+            group-hover:scale-105
+            ${isLMS ? "object-contain" : "object-cover"}
+          `}
         />
       </div>
 
@@ -36,11 +43,17 @@ const ProjectCard = ({
       <div className="p-6 md:p-8 flex flex-col justify-between">
         <div>
           {/* TITLE */}
-          <h3 className="text-2xl md:text-3xl font-bold text-white">
+          <h3
+            className="
+              text-2xl md:text-3xl font-bold text-white
+              transition-colors duration-300
+              group-hover:text-[#c7d2fe]
+            "
+          >
             {title}
           </h3>
 
-          {/* DESCRIPTION – moved slightly DOWN */}
+          {/* DESCRIPTION */}
           <p className="text-gray-300 mt-6 text-base leading-relaxed">
             {main}
           </p>
@@ -57,8 +70,9 @@ const ProjectCard = ({
               bg-[#465697]
               rounded-full
               font-semibold text-white
+              transition-all duration-300
               hover:bg-[#5a6acb]
-              transition
+              hover:scale-[1.02]
             "
           >
             Live Demo
@@ -73,8 +87,9 @@ const ProjectCard = ({
               border border-[#465697]
               rounded-full
               text-[#9fa8da]
+              transition-all duration-300
               hover:bg-[#465697]/10
-              transition
+              hover:scale-[1.02]
             "
           >
             Source Code
